@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app color="black" dark flat class="px-12">
         <v-btn>
-            <v-icon color="yellow" left class="mr-2">fas fa-signature</v-icon> Amexo
+            <v-icon color="yellow" left class="mr-2">fas fa-signature</v-icon> Amare
         </v-btn>
 
 

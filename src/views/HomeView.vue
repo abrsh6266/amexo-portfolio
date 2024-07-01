@@ -36,8 +36,8 @@
           </v-col>
         </v-row>
       </div>
-      <v-col cols="12" class="mt-16" id="about">
-        <div>
+      <v-col cols="12" class="mt-16"  id="about">
+        <div > 
           <v-row>
             <v-col cols="12" sm="6">
               <div class="egg">
@@ -47,7 +47,7 @@
             <v-col cols="12" sm="6">
               <h1 class="mt-16 mb-6">About Me</h1>
               <h4 class="mt-n4">I Am a Creative Visual Artist</h4>
-              <p class="text-grey">
+              <p class="text-black">
                 I am Amare Teshome, a visual artist who graduated in 2024 from Addis Ababa University's Alle School of
                 Fine Arts and Design with a degree in painting. Over four years, I studied a wide range of visual art
                 courses, gaining extensive knowledge and wisdom about visual art and artists.
@@ -385,7 +385,7 @@ export default defineComponent({
   left: 0;
   height: 100%;
   width: 50%;
-  background: black;
+  background: rgb(56, 58, 82);
   transform: skew(0deg, 6deg);
 }
 
@@ -396,7 +396,7 @@ export default defineComponent({
   right: 0;
   height: 100%;
   width: 50%;
-  background: black;
+  background: rgb(56, 58, 82);
   transform: skew(0deg, -6deg);
 }
 
