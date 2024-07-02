@@ -36,8 +36,8 @@
           </v-col>
         </v-row>
       </div>
-      <v-col cols="12" class="mt-16"  id="about">
-        <div > 
+      <v-col cols="12" class="mt-16" id="about">
+        <div>
           <v-row>
             <v-col cols="12" sm="6">
               <div class="egg">
@@ -130,7 +130,7 @@
         </div>
       </v-col>
       <v-col cols="12" sm="12" id="services">
-        <div class="d-flex justify-center mb-6">
+        <div class="d-flex justify-center mb-6 flex-wrap">
           <v-btn color="#FBDF7E" class="mr-2">All</v-btn>
           <v-btn class="mr-2" variant="tonal">Painting</v-btn>
           <v-btn class="mr-2" variant="tonal">Drawing</v-btn>
@@ -278,7 +278,7 @@
       <v-col cols="12" sm="12" class="px-16" id="contact">
         <v-row>
           <v-col cols="12" sm="4">
-            <div class="child">
+            <div class="childa">
               <h1>Contact Info</h1>
               <v-btn icon="fas fa-map-marker-alt" color="" class="mt-10" variant="outlined"></v-btn><br />
               <span class="text-caption">Addis Ababa, 4 Kilo Street</span><br />
@@ -425,23 +425,140 @@ export default defineComponent({
   margin-right: 8px;
 }
 
-.imgHover {
-  padding: 0 200px;
+.imgHover .v-hover {
+  margin-bottom: 20px;
 }
 
 .pre {
   width: 100%;
   height: 760px;
   text-align: center;
-  padding: 0 200px;
   background-color: #f5f5f5;
 }
 
 .hire {
   width: 100%;
-  height: 200px;
-  padding: 0 200px;
+  max-width: 960px;
+  /* Adjust the max-width to your design needs */
+  margin: auto;
+  padding: 20px;
   background-color: #e9e9e9;
-  margin-top: -24px;
+}
+
+@media (max-width: 960px) {
+  .head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .first {
+    width: 100%;
+    height: 1460px;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+
+  .pre {
+    width: 100%;
+    height: 860px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro span {
+    font-size: 1.2rem;
+  }
+
+  .image-container .v-img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 998px) {
+  .first {
+    width: 100%;
+    height: 960px;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .first {
+    width: 100%;
+    height: 1460px;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .pre {
+    width: 100%;
+    height: 2460px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+}
+
+
+/* form */
+.v-container {
+  padding: 16px 0;
+}
+
+.childa {
+  padding: 2rem;
+  text-align: center;
+}
+
+.childa h1 {
+  margin-bottom: 1rem;
+}
+
+.text-caption {
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 960px) {
+  .childa {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .childa {
+    padding: 0.5rem;
+  }
+
+  .childa h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .childa {
+    padding: 0.5rem;
+  }
+
+  .childa h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .childa {
+    padding: 0.5rem;
+  }
+
+  .text-caption {
+    margin-top: 8px;
+  }
 }
 </style>
